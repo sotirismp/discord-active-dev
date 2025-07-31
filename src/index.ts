@@ -1,5 +1,5 @@
 /* eslint-disable node/no-process-exit */
-import { client, onInteraction, onReady, spinner } from "@/src/config";
+import { client, onInteraction, onReady } from "@/src/config";
 import chalk from "chalk";
 import { Events } from "discord.js";
 
@@ -15,9 +15,6 @@ console.log(
 try {
   client.login(process.env.TOKEN);
 } catch (_e) {
-  spinner.fail(
-    chalk.bold("Error while logging in to Discord! GG, You broke Discord!")
-  );
   process.exit(0);
 }
 
