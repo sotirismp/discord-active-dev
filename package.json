@@ -1,0 +1,21 @@
+{
+  "name": "active-dev",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun src/index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "eslint": "^9.32.0",
+    "prettier": "^3.6.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "discord.js": "^14.21.0",
+    "ora": "^8.2.0"
+  }
+}
